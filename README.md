@@ -1,1 +1,1 @@
-# 120-blended-7-8
+https://github.com/YK911/basic-dictionary
