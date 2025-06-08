@@ -1,6 +1,8 @@
 :root {
   --main-text-color: #22343d;
   --main-bg-color: #fff;
+  --btn-bg-color: #02897a;
+  --icon-fill: #02897a;
 }
 
 body {
@@ -104,10 +106,9 @@ p {
 .header-btn:hover,
 .header-btn:focus {
   color: #fff;
-  background-color: #02897a;
+  background-color: var(--btn-bg-color);
   border: none;
 }
-
 
 .hero {
   padding-top: 25px;
@@ -123,4 +124,103 @@ p {
 .hero-btn-list {
   display: flex;
   gap: 30px;
+}
+
+/* ABOUT SECTION  */
+
+.features {
+  padding-bottom: 50px;
+}
+
+.features-title {
+  font-size: 32px;
+  text-align: center;
+  max-width: 490px;
+  margin: 0 auto 50px auto;
+}
+.features-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+
+/* .features-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 19px;
+}
+
+.features-item:nth-child(1) .features-box {
+  background-color: #02897a;
+}
+
+.features-item:nth-child(2) .features-box {
+  background-color: #4d8dff;
+}
+
+.features-item:nth-child(3) .features-box {
+  background-color:  #740a76;
+}
+
+.features-item:nth-child(4) .features-box {
+  background-color:  #f03e3d;
+} */
+
+.features-item-title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 26px;
+  margin-bottom: 13px;
+}
+
+.features-item-title::before {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 54px;
+  border-radius: 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 26px;
+}
+
+.features-item:nth-child(1) .features-item-title::before {
+  background-color: #02897a;
+  background-image: url(../images/f-icon-1.svg);
+}
+
+.features-item:nth-child(2) .features-item-title::before {
+  background-color: #4d8dff;
+  background-image: url(../images/f-icon-2.svg);
+}
+
+.features-item:nth-child(3) .features-item-title::before {
+  background-color:  #740a76;
+  background-image: url(../images/f-icon-3.svg);
+}
+
+.features-item:nth-child(4) .features-item-title::before {
+  background-color:  #f03e3d;
+  background-image: url(../images/f-icon-4.svg);
+}
+
+.features-item-text {
+  line-height: 1.62;
+}
+.features-btn {
+  min-width: 175px;
+  height: 53px;
+  border-radius: 4px;
+  background-color: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
